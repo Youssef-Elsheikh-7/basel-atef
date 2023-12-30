@@ -1,0 +1,30 @@
+.winners {
+  margin: 20px 0;
+}
+.winners .winners_list .winner {
+  background-color: #ffb61e;
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+.winners .winners_list .winner .winner_info .winner_title,
+.winners .winners_list .winner .winner_info .winner_description {
+  color: #fff;
+}
+.winners .winners_list .winner .winner_img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}

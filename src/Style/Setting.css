@@ -1,0 +1,76 @@
+.setting {
+  padding: 20px 0;
+}
+.setting .setting_tap .tap {
+  margin-top: 4px;
+  cursor: pointer;
+}
+.setting .setting_tap .data,
+.setting .setting_tap .password {
+  margin: 10px 0;
+}
+
+.setting .forma input {
+  border: 1px solid #222;
+  caret-color: #ffb61e;
+}
+
+.setting .forma input:focus {
+  outline: 1px solid #3333335e
+}
+.setting .input_group {
+  display: block;
+  margin: 10px 0;
+}
+.setting .input_group label, .setting .input_group input {
+  margin: 4px 0;
+  display: block !important;
+}
+.setting button {
+  background-color: #ffb61e;
+  border: none;
+  width: 168px;
+}/*# sourceMappingURL=Setting.css.map */
+
+@media (max-width:991px) {
+  .setting_tap {
+    text-align: center;
+  }
+  .setting .forma{
+    text-align: center;
+  }
+  .setting .forma input{
+    width: 85%;
+    margin: auto;
+  }
+
+  .setting .forma button{
+    margin-top: 20px;
+  
+  }
+
+}
+
+@media (min-width:992px) {
+  .setting .container .row {
+    justify-content: space-evenly;
+  }
+
+
+  .setting .forma input{
+    width: 100%;
+    /* margin: auto; */
+  }
+
+  .setting .forma button{
+    margin-top: 20px;
+  
+  }
+}
+
+.swal2-container button{
+  margin: 0 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}

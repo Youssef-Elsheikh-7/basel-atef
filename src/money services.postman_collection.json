@@ -1,0 +1,1260 @@
+{
+	"info": {
+		"_postman_id": "2a64d6e3-71b6-4184-81a5-f6ae53b9583f",
+		"name": "money services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31152798",
+		"_collection_link": "https://lunar-station-849485.postman.co/workspace/Money-services~55d6dc21-670b-4b06-ae35-25f490df09b7/collection/21929436-2a64d6e3-71b6-4184-81a5-f6ae53b9583f?action=share&source=collection_link&creator=31152798"
+	},
+	"item": [
+		{
+			"name": "authentication",
+			"item": [
+				{
+					"name": "login",
+					"item": [
+						{
+							"name": "login user",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"host": true
+								}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://moneyservices.store/back/public/api/login?email=bishoemad61@gmail.com&password=123456",
+									"protocol": "https",
+									"host": [
+										"moneyservices",
+										"store"
+									],
+									"path": [
+										"back",
+										"public",
+										"api",
+										"login"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "bishoemad61@gmail.com"
+										},
+										{
+											"key": "password",
+											"value": "123456"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login facebook & google",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://moneyservices.store/back/public/api/login_api?name=basel&email=basel_atef8@gmail.com&provider_id=123456n5&provider=facebook",
+									"protocol": "https",
+									"host": [
+										"moneyservices",
+										"store"
+									],
+									"path": [
+										"back",
+										"public",
+										"api",
+										"login_api"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "basel",
+											"description": "required "
+										},
+										{
+											"key": "email",
+											"value": "basel_atef8@gmail.com",
+											"description": "nullable "
+										},
+										{
+											"key": "provider_id",
+											"value": "123456n5",
+											"description": "required "
+										},
+										{
+											"key": "provider",
+											"value": "facebook",
+											"description": "required "
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "register",
+					"item": [
+						{
+							"name": "register user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://moneyservices.store/back/public/api/register?email=el5olasamsasa@gmail.com&name=basel&password=123456",
+									"protocol": "https",
+									"host": [
+										"moneyservices",
+										"store"
+									],
+									"path": [
+										"back",
+										"public",
+										"api",
+										"register"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "el5olasamsasa@gmail.com"
+										},
+										{
+											"key": "name",
+											"value": "basel"
+										},
+										{
+											"key": "password",
+											"value": "123456"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "forget password",
+					"item": [
+						{
+							"name": "send email",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://moneyservices.store/back/public/api/sendLink?email=el5olasamsasa@gmail.com",
+									"protocol": "https",
+									"host": [
+										"moneyservices",
+										"store"
+									],
+									"path": [
+										"back",
+										"public",
+										"api",
+										"sendLink"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "el5olasamsasa@gmail.com"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "check code",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://moneyservices.store/back/public/api/check-code?email=emanghounim09@gmail.com&token=2030",
+									"protocol": "https",
+									"host": [
+										"moneyservices",
+										"store"
+									],
+									"path": [
+										"back",
+										"public",
+										"api",
+										"check-code"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "emanghounim09@gmail.com"
+										},
+										{
+											"key": "token",
+											"value": "2030"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "new password",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://moneyservices.store/back/public/api/new-password?email=bishoemad61@gmail.com&new_password=123456&new_password_confirmation=12345",
+									"protocol": "https",
+									"host": [
+										"moneyservices",
+										"store"
+									],
+									"path": [
+										"back",
+										"public",
+										"api",
+										"new-password"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "bishoemad61@gmail.com"
+										},
+										{
+											"key": "new_password",
+											"value": "123456"
+										},
+										{
+											"key": "new_password_confirmation",
+											"value": "12345"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "home",
+			"item": [
+				{
+					"name": "home",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/home?locale=arabic",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"home"
+							],
+							"query": [
+								{
+									"key": "locale",
+									"value": "arabic"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "all products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://moneyservices.store/back/public/api/products"
+					},
+					"response": []
+				},
+				{
+					"name": "product details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/product-detail/melange-casual-black?user_id=2&locale=arabic",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"product-detail",
+								"melange-casual-black"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "2",
+									"description": "required"
+								},
+								{
+									"key": "locale",
+									"value": "arabic"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/category?locale=arabic",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"category"
+							],
+							"query": [
+								{
+									"key": "locale",
+									"value": "arabic"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fillter category & price",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/product-grids?category=womens-fashion&locale=english&brand&color=%23000000",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"product-grids"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "womens-fashion",
+									"description": "slug"
+								},
+								{
+									"key": "price",
+									"value": "4000-6000",
+									"disabled": true
+								},
+								{
+									"key": "locale",
+									"value": "english"
+								},
+								{
+									"key": "brand",
+									"value": null,
+									"description": "slug"
+								},
+								{
+									"key": "color",
+									"value": "#000000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "review product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/product/summer-round-neck-t/review?rate=5&user_id=5&review=wwwww",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"product",
+								"summer-round-neck-t",
+								"review"
+							],
+							"query": [
+								{
+									"key": "rate",
+									"value": "5"
+								},
+								{
+									"key": "user_id",
+									"value": "5"
+								},
+								{
+									"key": "review",
+									"value": "wwwww"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/search-product?search=melange-casual-black",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"search-product"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "melange-casual-black"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "brands",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/brands?locale=arabic",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"brands"
+							],
+							"query": [
+								{
+									"key": "locale",
+									"value": "arabic"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "colors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://moneyservices.store/back/public/api/colors"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "posts",
+			"item": [
+				{
+					"name": "all posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/posts?locale=arabic",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"posts"
+							],
+							"query": [
+								{
+									"key": "locale",
+									"value": "arabic"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/blog-detail/lorem-ipsum-is-simply?locale=arabic",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"blog-detail",
+								"lorem-ipsum-is-simply"
+							],
+							"query": [
+								{
+									"key": "locale",
+									"value": "arabic"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/postCategories?locale=arabic",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"postCategories"
+							],
+							"query": [
+								{
+									"key": "locale",
+									"value": "arabic"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Wishlist",
+			"item": [
+				{
+					"name": "delete Wishlist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/wishlist-delete?user_id=&product_id=",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"wishlist-delete"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": ""
+								},
+								{
+									"key": "product_id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add Wishlist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/wishlist/melange-ethnic-kurthi?user_id=1",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"wishlist",
+								"melange-ethnic-kurthi"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list Wishlist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/wishlist?user_id=1",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"wishlist"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "orders & copons",
+			"item": [
+				{
+					"name": "order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"sdadasd\",\r\n  \"phone\": \"01068594766\",\r\n  \"email\": \"bamocairo@gmail.com\",\r\n  \"governorate_id\": \"11\",\r\n  \"area\": \"sadasdas\",\r\n  \"payment_status\": \"cash\",\r\n  \"shipping\": \"100\",\r\n  \"products\": [\r\n  {\r\n      \"product_id\":\"6\",\r\n      \"quantity\":\"5\",\r\n      \"color\":\"qqq\",\r\n      \"size\":\"qqqq\"  \r\n  }\r\n\r\n  ],\r\n  \"user_id\": \"5\",\r\n  \"ref_num\":\"132233123\",\r\n  \"total_amount\": \"1000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://moneyservices.store/back/public/api/order-cart"
+					},
+					"response": []
+				},
+				{
+					"name": "show copons user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/copons?user_id=5&status=cancel",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"copons"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "5"
+								},
+								{
+									"key": "status",
+									"value": "cancel",
+									"description": "('active', 'cancel')"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/order-show/ORD-XZCEF5FUKE?user_id=96",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"order-show",
+								"ORD-XZCEF5FUKE"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "96"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/order-show/ORD-TZEKJQXTIW?user_id=5",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"order-show",
+								"ORD-TZEKJQXTIW"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "shipping",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/shipping?locale=arabic",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"shipping"
+							],
+							"query": [
+								{
+									"key": "locale",
+									"value": "arabic"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/profile-user?user_id=5",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"profile-user"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change data user",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "basel atef",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "2LjI7pu0I/131409659_871533143602067_6695854946487657732_n.jpg"
+								}
+							]
+						},
+						"url": "https://moneyservices.store/back/public/api/profile/5"
+					},
+					"response": []
+				},
+				{
+					"name": "change password user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21vbmV5c2VydmljZXMuc3RvcmUvYmFjay9wdWJsaWMvYXBpL2xvZ2luIiwiaWF0IjoxNzAyMTYwNTQ3LCJleHAiOjE3MDIxNjQxNDcsIm5iZiI6MTcwMjE2MDU0NywianRpIjoiVnlLRGc2NW9LTWI3M2JuYyIsInN1YiI6IjU4IiwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.JQLatgew4pm3rxk7fB09XkK2BaZSuDh1jsOAYPL_3bA"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/change-password?current_password=Ahmed123&new_password=Ahmed1234&new_password_confirmation=Ahmed1234&user_id=58",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"change-password"
+							],
+							"query": [
+								{
+									"key": "current_password",
+									"value": "Ahmed123"
+								},
+								{
+									"key": "new_password",
+									"value": "Ahmed1234"
+								},
+								{
+									"key": "new_password_confirmation",
+									"value": "Ahmed1234"
+								},
+								{
+									"key": "user_id",
+									"value": "58"
+								},
+								{
+									"key": "new_confirm_password",
+									"value": "12345",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://moneyservices.store/back/public/api/delete-user/31"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pages",
+			"item": [
+				{
+					"name": "contact us",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://moneyservices.store/back/public/api/contact-us"
+					},
+					"response": []
+				},
+				{
+					"name": "pages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/pages?locale=arabic",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"pages"
+							],
+							"query": [
+								{
+									"key": "locale",
+									"value": "arabic"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "page details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/page/4?locale=arabic",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"page",
+								"4"
+							],
+							"query": [
+								{
+									"key": "locale",
+									"value": "arabic"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "سياسة الخصوصية",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/page/3?locale=arabic",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"page",
+								"3"
+							],
+							"query": [
+								{
+									"key": "locale",
+									"value": "arabic"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "شروط والاستخدام",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/page/6?locale=arabic",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"page",
+								"6"
+							],
+							"query": [
+								{
+									"key": "locale",
+									"value": "arabic"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "من نحن",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/about/5?locale=arabic",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"about",
+								"5"
+							],
+							"query": [
+								{
+									"key": "locale",
+									"value": "arabic"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "form contact us",
+			"item": [
+				{
+					"name": "send-email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/send-email?name&phone&email&details=sadasda",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"send-email"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": null
+								},
+								{
+									"key": "phone",
+									"value": null
+								},
+								{
+									"key": "email",
+									"value": null
+								},
+								{
+									"key": "details",
+									"value": "sadasda"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "winrer user",
+			"item": [
+				{
+					"name": "winrer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/winrer-user?locale=arabic",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"winrer-user"
+							],
+							"query": [
+								{
+									"key": "locale",
+									"value": "arabic"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "copoun",
+			"item": [
+				{
+					"name": "check copoun",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/check-copoun?code=111111",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"check-copoun"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "111111",
+									"description": "القيمة مئوية "
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "footer",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://moneyservices.store/back/public/api/footer?locale=arabic",
+							"protocol": "https",
+							"host": [
+								"moneyservices",
+								"store"
+							],
+							"path": [
+								"back",
+								"public",
+								"api",
+								"footer"
+							],
+							"query": [
+								{
+									"key": "locale",
+									"value": "arabic"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

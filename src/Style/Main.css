@@ -1,0 +1,55 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+
+.button {
+  background-color: #ffa71a;
+}
+
+button, input {
+  height: 40px;
+  border-radius: 3px;
+}
+
+.imgeslider {
+  width: 80px;
+  height: 80px;
+}
+
+.bg-button {
+  width: 40px;
+  height: 20px;
+  color: #f1c47b;
+}
+
+.swiper-pagination {
+  display: none !important;
+}
+
+.stars-rating {
+  text-align: center;
+}
+
+.stars-rating ul {
+  font-size: 24px;
+}
+
+.box-info ul {
+  font-size: 24px;
+}
+
